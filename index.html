@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Integration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Bakiye: <span id="balanceAmount">2000</span> para</h1>
+      <div class="market-link">Market</div>
+    </div>
+
+    <div id="alert" class="alert"></div>
+
+    <div id="messageSection">
+      <textarea id="message" placeholder="Mesajınızı buraya yazın"></textarea>
+      <input type="file" id="fileInput" accept="image/*">
+      <button onclick="sendMessage()">Mesaj ve Fotoğraf Gönder</button>
+    </div>
+
+    <div id="depositSection">
+      <input type="text" id="depositCode" placeholder="Yatırma Kodu">
+      <button onclick="deposit()">Bakiye Yükle</button>
+    </div>
+
+    <button class="discord-button" onclick="window.location.href='https://discord.com'">Discord'a Git</button>
+    <button class="discord-button" onclick="window.location.href='https://discord.com'">Youtube'a Git</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
